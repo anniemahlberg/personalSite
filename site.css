@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+body {
+    background-color: rgb(223, 235, 235);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: rgb(116, 168, 168);
+    color: rgb(249, 243, 243);
+    height: auto;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+}
+
+header h1 {
+    position: relative;
+    padding: 30px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 100;
+}
+
+header nav {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    font-size: 20px;    
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+nav a, nav a:visited {
+    color: rgb(249, 243, 243);
+    text-decoration: none;
+}
+
+nav a::content {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 205);
+    border-bottom: solid 1px rgb(255, 255, 205);
+}
+
+nav a.active {
+    color:rgb(255, 255, 205);
+    border-bottom: solid 1px rgb(255, 255, 205);
+}
+
+main {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: sticky;
+    bottom: 0px;
+    background-color: rgb(116, 168, 168);
+    width: 100%;
+    color: rgb(249, 243, 243);
+}
+
+footer a {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 200px;
+    }
+    
+    header h1 {
+        margin: 0px;
+    }
+
+    header nav {
+        top: 140px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+}

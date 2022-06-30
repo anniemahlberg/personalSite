@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 10px auto;
+    width: 30%;
+}
+
+.project h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .project {
+        width: 45%;
+    }
+    
+    .project h2 {
+        font-size: 20px;
+    }
+}

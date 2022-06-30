@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.thing {
+    margin: 20px;
+    width: 30%;
+}
+
+.thing h2 {
+    text-align: center;
+    color: rgb(255, 255, 205);
+    background-color: rgb(116, 168, 168);
+    border-radius: 10px;
+    margin: 5px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    padding: 5px;
+}
+
+.thing p {
+    margin: 5px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .thing {
+        min-width: 90%;
+        margin: 10px;
+    }
+
+    .thing img {
+        max-height: 375px;
+        width: auto;
+    }
+
+    #thing1 img {
+        margin-left: 20px;
+    }
+
+    #thing2 img {
+        margin-left: 50px;
+    }
+
+    #thing3 img {
+        max-height: 300px;
+        margin-left: 10px;
+    }
+}
